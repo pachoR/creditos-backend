@@ -4,7 +4,7 @@ import { getErrorResponse } from './utils';
 import servicioAlumno from '../services/alumno';
 
 const validateNumeroControl = (nctrl: string): boolean => {
-    const nctrlRegex = /^(C|c)?[0-9]{8}$/;
+    const nctrlRegex = /^(C|c)?[0-9]{8,9}$/;
     return nctrlRegex.test(nctrl);
 }
 
