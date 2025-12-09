@@ -395,3 +395,8 @@ INSERT INTO Creditos (alu_id, act_id, cred_fecha) VALUES
     (59, 38, '2024-05-04'),
     (59, 39, '2024-12-11'),
     (59, 40, '2024-04-28');
+
+-- Insertar configuraciones por defecto
+INSERT INTO Configuraciones (config_nombre, config_valor) VALUES
+    ('creditos_a_completar', '6'),
+    ('numero_control_length', '13');
