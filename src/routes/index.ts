@@ -5,6 +5,7 @@ import docente from './docente';
 import periodo from './periodo';
 import actividades from './actividades';
 import creditos from './creditos';
+import configuracion from './configuracion';
 
 const router = Router();
 
@@ -14,5 +15,6 @@ router.use('/docente', docente);
 router.use('/periodo', periodo);
 router.use('/actividades', actividades);
 router.use('/creditos', creditos);
+router.use('/configuracion', configuracion);
 
 export default router;

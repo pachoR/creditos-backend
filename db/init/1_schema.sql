@@ -79,3 +79,9 @@ CREATE TABLE Instrucciones (
     FOREIGN KEY (act_id) REFERENCES Actividades(act_id) ON DELETE CASCADE,
     FOREIGN KEY (alu_id) REFERENCES Alumno(alu_id) ON DELETE RESTRICT
 );
+
+-- Creación de la tabla Configuraciones
+CREATE TABLE Configuraciones (
+    config_nombre VARCHAR(100) PRIMARY KEY,
+    config_valor TEXT NOT NULL
+);
